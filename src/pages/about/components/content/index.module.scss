@@ -1,0 +1,7 @@
+@use '@/styles/_mixins.scss';
+
+.container {
+    @include mixins.screen;
+    @include mixins.flex-center;
+    flex-direction: column;
+}

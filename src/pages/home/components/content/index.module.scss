@@ -1,0 +1,17 @@
+@use '@/styles/_mixins.scss';
+
+.container {
+    @include mixins.screen;
+    @include mixins.flex-center;
+    flex-direction: column;
+}
+
+.goto {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.count {
+    margin: 0 10px;
+}

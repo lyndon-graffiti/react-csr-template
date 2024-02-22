@@ -1,0 +1,12 @@
+/* 使用 BEM 命名规范，避免类名冲突 block__element--modify */
+.icon__required {
+  color: #ff4d4f;
+  margin-right: 4px;
+  font-family: "SimSun, sans-serif";
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 700;
+}
