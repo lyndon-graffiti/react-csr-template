@@ -4,6 +4,8 @@ export enum PartRoutes {
 }
 
 export enum Routes {
+  Default = "/",
+  NotFound = "*",
   Home = "/home",
   About = "/about",
   CrawlerCleaningList = "/crawler/cleaning-list",

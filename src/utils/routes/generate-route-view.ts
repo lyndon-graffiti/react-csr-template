@@ -4,7 +4,7 @@ import { routes } from "@/routers";
  * 获取每个具体页面的元信息
  */
 export default () => {
-  const finallyPagePathMap: RouteView[] = [];
+  const finallyPagePathMap: RouteConfig[] = [];
 
   const traverse = (parentPath: string, currentRouters: RouteConfig[]) => {
     currentRouters.forEach(item => {
@@ -12,7 +12,7 @@ export default () => {
         finallyPagePathMap.push({
           key: item.key,
           path: `${parentPath}${item.path}`,
-          component: item?.component,
+          element: item?.element,
         });
       } else {
         traverse(`${parentPath}${item.path}`, item.children);

@@ -14,7 +14,7 @@ const App = () => {
       <Suspense fallback="loading...">
         <Routes>
           {routeViewsMap.map(routeView => (
-            <Route key={routeView.key} path={routeView.path} element={routeView?.component} />
+            <Route key={routeView.key} path={routeView.path} element={routeView?.element} />
           ))}
         </Routes>
       </Suspense>

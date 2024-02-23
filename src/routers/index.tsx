@@ -2,41 +2,41 @@ import { PartRoutes, Routes } from "./routes";
 
 import Home from "@/pages/home";
 import About from "@/pages/about";
+import NotFound from "@/pages/404";
 
 export const routes: RouteConfig[] = [
   {
-    name: "首页",
-    path: "/",
-    key: "/",
-    isMenu: true,
-    component: <Home />,
+    path: Routes.Default,
+    key: Routes.Default,
+    element: <Home />,
+  },
+  {
+    path: Routes.NotFound,
+    key: Routes.NotFound,
+    element: <NotFound />,
   },
   {
     name: "首页",
     path: Routes.Home,
     key: Routes.Home,
-    isMenu: true,
-    component: <Home />,
+    element: <Home />,
   },
   {
     name: "关于",
     path: Routes.About,
     key: Routes.About,
-    isMenu: true,
-    component: <About />,
+    element: <About />,
   },
   {
     name: "爬虫清洗",
     path: PartRoutes.Crawler,
     key: PartRoutes.Crawler,
-    isMenu: true,
     children: [
       {
         name: "清洗资源列表",
         path: PartRoutes.CleaningList,
         key: PartRoutes.CleaningList,
-        isMenu: true,
-        component: undefined,
+        element: undefined,
       },
     ],
   },
