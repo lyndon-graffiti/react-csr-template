@@ -6,6 +6,13 @@ import About from "@/pages/about";
 export const routes: RouteConfig[] = [
   {
     name: "首页",
+    path: "/",
+    key: "/",
+    isMenu: true,
+    component: <Home />,
+  },
+  {
+    name: "首页",
     path: Routes.Home,
     key: Routes.Home,
     isMenu: true,
