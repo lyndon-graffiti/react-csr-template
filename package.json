@@ -2,6 +2,9 @@
   "name": "@lyndon/react-csr-template",
   "version": "0.1.0",
   "type": "module",
+  "author": {
+    "name": "lyndon."
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
