@@ -33,16 +33,16 @@ dependencies:
 devDependencies:
   '@commitlint/cli':
     specifier: ^18.6.0
-    version: 18.6.0(@types/node@20.11.20)(typescript@5.3.3)
-  '@commitlint/config-angular':
-    specifier: ^18.6.0
-    version: 18.6.0
+    version: 18.6.1(@types/node@20.11.20)(typescript@5.3.3)
+  '@commitlint/config-conventional':
+    specifier: ^18.6.2
+    version: 18.6.2
   '@types/node':
     specifier: ^20.11.20
     version: 20.11.20
   '@types/react':
     specifier: ^18.2.43
-    version: 18.2.56
+    version: 18.2.58
   '@types/react-dom':
     specifier: ^18.2.17
     version: 18.2.19
@@ -51,22 +51,22 @@ devDependencies:
     version: 5.3.3
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.14.0
-    version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3)
+    version: 6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3)
   '@typescript-eslint/parser':
     specifier: ^6.14.0
-    version: 6.21.0(eslint@8.56.0)(typescript@5.3.3)
+    version: 6.21.0(eslint@8.57.0)(typescript@5.3.3)
   '@vitejs/plugin-react-swc':
     specifier: ^3.5.0
-    version: 3.6.0(vite@5.1.3)
+    version: 3.6.0(vite@5.1.4)
   eslint:
     specifier: ^8.56.0
-    version: 8.56.0
+    version: 8.57.0
   eslint-plugin-react-hooks:
     specifier: ^4.6.0
-    version: 4.6.0(eslint@8.56.0)
+    version: 4.6.0(eslint@8.57.0)
   eslint-plugin-react-refresh:
     specifier: ^0.4.5
-    version: 0.4.5(eslint@8.56.0)
+    version: 0.4.5(eslint@8.57.0)
   husky:
     specifier: ^8.0.0
     version: 8.0.3
@@ -84,7 +84,7 @@ devDependencies:
     version: 5.3.3
   vite:
     specifier: ^5.0.8
-    version: 5.1.3(@types/node@20.11.20)(sass@1.71.1)
+    version: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
 
 packages:
 
@@ -115,16 +115,16 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@commitlint/cli@18.6.0(@types/node@20.11.20)(typescript@5.3.3):
-    resolution: {integrity: sha1-8GXgUU84cLbcmjxginiCCAa0ZSc=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/cli/download/@commitlint/cli-18.6.0.tgz}
+  /@commitlint/cli@18.6.1(@types/node@20.11.20)(typescript@5.3.3):
+    resolution: {integrity: sha1-eL/9+gDW8BQl1TCWlUmT2D8rND0=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/cli/download/@commitlint/cli-18.6.1.tgz}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
-      '@commitlint/format': 18.6.0
-      '@commitlint/lint': 18.6.0
-      '@commitlint/load': 18.6.0(@types/node@20.11.20)(typescript@5.3.3)
-      '@commitlint/read': 18.6.0
-      '@commitlint/types': 18.6.0
+      '@commitlint/format': 18.6.1
+      '@commitlint/lint': 18.6.1
+      '@commitlint/load': 18.6.1(@types/node@20.11.20)(typescript@5.3.3)
+      '@commitlint/read': 18.6.1
+      '@commitlint/types': 18.6.1
       execa: 5.1.1
       lodash.isfunction: 3.0.9
       resolve-from: 5.0.0
@@ -135,31 +135,27 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/config-angular-type-enum@18.4.4:
-    resolution: {integrity: sha1-xA/P9mKS2t0ueW98USpwp/Ric2I=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/config-angular-type-enum/download/@commitlint/config-angular-type-enum-18.4.4.tgz}
-    engines: {node: '>=v18'}
-    dev: true
-
-  /@commitlint/config-angular@18.6.0:
-    resolution: {integrity: sha1-PxBYtYAadHVty3FGc7FIN6Pmpts=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/config-angular/download/@commitlint/config-angular-18.6.0.tgz}
+  /@commitlint/config-conventional@18.6.2:
+    resolution: {integrity: sha1-YX8+52FXgEDK3lMGMQWGmWQsvXg=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/config-conventional/download/@commitlint/config-conventional-18.6.2.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/config-angular-type-enum': 18.4.4
+      '@commitlint/types': 18.6.1
+      conventional-changelog-conventionalcommits: 7.0.2
     dev: true
 
-  /@commitlint/config-validator@18.6.0:
-    resolution: {integrity: sha1-6h4E6Sgp3XuQzqRE8kWwve+gpYY=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/config-validator/download/@commitlint/config-validator-18.6.0.tgz}
+  /@commitlint/config-validator@18.6.1:
+    resolution: {integrity: sha1-4NcamcmEpoWGx656/T9SNCAi+ug=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/config-validator/download/@commitlint/config-validator-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.6.0
+      '@commitlint/types': 18.6.1
       ajv: 8.12.0
     dev: true
 
-  /@commitlint/ensure@18.6.0:
-    resolution: {integrity: sha1-Pz3AnZkBbqqw2pQjEj7/2CDRGTE=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/ensure/download/@commitlint/ensure-18.6.0.tgz}
+  /@commitlint/ensure@18.6.1:
+    resolution: {integrity: sha1-FxQeCDIAypTYSA3COw6Pix/Te38=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/ensure/download/@commitlint/ensure-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.6.0
+      '@commitlint/types': 18.6.1
       lodash.camelcase: 4.3.0
       lodash.kebabcase: 4.1.1
       lodash.snakecase: 4.1.1
@@ -167,45 +163,45 @@ packages:
       lodash.upperfirst: 4.3.1
     dev: true
 
-  /@commitlint/execute-rule@18.4.4:
-    resolution: {integrity: sha1-remGdCwZRMgWKlQoh0flSoxhRrU=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/execute-rule/download/@commitlint/execute-rule-18.4.4.tgz}
+  /@commitlint/execute-rule@18.6.1:
+    resolution: {integrity: sha1-GBdeBD/m+1/O6nuFMDFsZE+T3+Y=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/execute-rule/download/@commitlint/execute-rule-18.6.1.tgz}
     engines: {node: '>=v18'}
     dev: true
 
-  /@commitlint/format@18.6.0:
-    resolution: {integrity: sha1-4T74QZzY6ze+WCWi6E5zyrv7Vq0=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/format/download/@commitlint/format-18.6.0.tgz}
+  /@commitlint/format@18.6.1:
+    resolution: {integrity: sha1-XyuLOuTY2AvZI5F46X32PluNKAo=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/format/download/@commitlint/format-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.6.0
+      '@commitlint/types': 18.6.1
       chalk: 4.1.2
     dev: true
 
-  /@commitlint/is-ignored@18.6.0:
-    resolution: {integrity: sha1-0VqwT1R/dVTMM3fVD44ZF4UCuK8=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/is-ignored/download/@commitlint/is-ignored-18.6.0.tgz}
+  /@commitlint/is-ignored@18.6.1:
+    resolution: {integrity: sha1-TuCLqR/z3vsG4O8ZJZqcZzSo0G4=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/is-ignored/download/@commitlint/is-ignored-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.6.0
-      semver: 7.5.4
+      '@commitlint/types': 18.6.1
+      semver: 7.6.0
     dev: true
 
-  /@commitlint/lint@18.6.0:
-    resolution: {integrity: sha1-9UyFaECmI44MKXJYjC3JhjF/G3s=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/lint/download/@commitlint/lint-18.6.0.tgz}
+  /@commitlint/lint@18.6.1:
+    resolution: {integrity: sha1-/jg0Y2yZ7hRTSo6zgygxrDYun9g=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/lint/download/@commitlint/lint-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/is-ignored': 18.6.0
-      '@commitlint/parse': 18.6.0
-      '@commitlint/rules': 18.6.0
-      '@commitlint/types': 18.6.0
+      '@commitlint/is-ignored': 18.6.1
+      '@commitlint/parse': 18.6.1
+      '@commitlint/rules': 18.6.1
+      '@commitlint/types': 18.6.1
     dev: true
 
-  /@commitlint/load@18.6.0(@types/node@20.11.20)(typescript@5.3.3):
-    resolution: {integrity: sha1-mBCClLk4OqKQV4GxkiFd9HGLq7c=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/load/download/@commitlint/load-18.6.0.tgz}
+  /@commitlint/load@18.6.1(@types/node@20.11.20)(typescript@5.3.3):
+    resolution: {integrity: sha1-+3ntfui1iXqbXCdMHiTtqRYt+BY=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/load/download/@commitlint/load-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/config-validator': 18.6.0
-      '@commitlint/execute-rule': 18.4.4
-      '@commitlint/resolve-extends': 18.6.0
-      '@commitlint/types': 18.6.0
+      '@commitlint/config-validator': 18.6.1
+      '@commitlint/execute-rule': 18.6.1
+      '@commitlint/resolve-extends': 18.6.1
+      '@commitlint/types': 18.6.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.3.3)
       cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.20)(cosmiconfig@8.3.6)(typescript@5.3.3)
@@ -218,67 +214,67 @@ packages:
       - typescript
     dev: true
 
-  /@commitlint/message@18.4.4:
-    resolution: {integrity: sha1-gRaCoNFHok5cRnrNtSBxQ03yufU=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/message/download/@commitlint/message-18.4.4.tgz}
+  /@commitlint/message@18.6.1:
+    resolution: {integrity: sha1-EHvUCSOtI9LeVskqaLF56/t+MU4=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/message/download/@commitlint/message-18.6.1.tgz}
     engines: {node: '>=v18'}
     dev: true
 
-  /@commitlint/parse@18.6.0:
-    resolution: {integrity: sha1-rhn/jOsMj/qxMRWIKbBrUFuZIf0=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/parse/download/@commitlint/parse-18.6.0.tgz}
+  /@commitlint/parse@18.6.1:
+    resolution: {integrity: sha1-KUa4FBJekHucTWPT5x0MG1SzC2I=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/parse/download/@commitlint/parse-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/types': 18.6.0
+      '@commitlint/types': 18.6.1
       conventional-changelog-angular: 7.0.0
       conventional-commits-parser: 5.0.0
     dev: true
 
-  /@commitlint/read@18.6.0:
-    resolution: {integrity: sha1-Mk6h+mJfiEJ3gN8j//5KktOD1mU=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/read/download/@commitlint/read-18.6.0.tgz}
+  /@commitlint/read@18.6.1:
+    resolution: {integrity: sha1-jBODEe2XSUJ5IMNp9idr4TbyqlA=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/read/download/@commitlint/read-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/top-level': 18.4.4
-      '@commitlint/types': 18.6.0
+      '@commitlint/top-level': 18.6.1
+      '@commitlint/types': 18.6.1
       git-raw-commits: 2.0.11
       minimist: 1.2.8
     dev: true
 
-  /@commitlint/resolve-extends@18.6.0:
-    resolution: {integrity: sha1-21W+KzLhJZO8mNxExtmp2QlBurQ=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/resolve-extends/download/@commitlint/resolve-extends-18.6.0.tgz}
+  /@commitlint/resolve-extends@18.6.1:
+    resolution: {integrity: sha1-8FcsaC/CTbq+Lg9ChzJh4PpCyRo=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/resolve-extends/download/@commitlint/resolve-extends-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/config-validator': 18.6.0
-      '@commitlint/types': 18.6.0
+      '@commitlint/config-validator': 18.6.1
+      '@commitlint/types': 18.6.1
       import-fresh: 3.3.0
       lodash.mergewith: 4.6.2
       resolve-from: 5.0.0
       resolve-global: 1.0.0
     dev: true
 
-  /@commitlint/rules@18.6.0:
-    resolution: {integrity: sha1-bZM+LeVjm3W0lGEgs4gOcuZqYFE=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/rules/download/@commitlint/rules-18.6.0.tgz}
+  /@commitlint/rules@18.6.1:
+    resolution: {integrity: sha1-2iWu/+bA4cdiXkT0YIn7iGCYbK8=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/rules/download/@commitlint/rules-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
-      '@commitlint/ensure': 18.6.0
-      '@commitlint/message': 18.4.4
-      '@commitlint/to-lines': 18.4.4
-      '@commitlint/types': 18.6.0
+      '@commitlint/ensure': 18.6.1
+      '@commitlint/message': 18.6.1
+      '@commitlint/to-lines': 18.6.1
+      '@commitlint/types': 18.6.1
       execa: 5.1.1
     dev: true
 
-  /@commitlint/to-lines@18.4.4:
-    resolution: {integrity: sha1-VGz42YVFnzUmNZtqY9eltCHh7WA=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/to-lines/download/@commitlint/to-lines-18.4.4.tgz}
+  /@commitlint/to-lines@18.6.1:
+    resolution: {integrity: sha1-0ognpKVAyY7qGq4x2v1m+AsvG54=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/to-lines/download/@commitlint/to-lines-18.6.1.tgz}
     engines: {node: '>=v18'}
     dev: true
 
-  /@commitlint/top-level@18.4.4:
-    resolution: {integrity: sha1-32n/pJ/cRUHR8F6BQ1LVdfsPOw0=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/top-level/download/@commitlint/top-level-18.4.4.tgz}
+  /@commitlint/top-level@18.6.1:
+    resolution: {integrity: sha1-Qp/LmF476rqbF+BcCuYZJsZHuvA=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/top-level/download/@commitlint/top-level-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
       find-up: 5.0.0
     dev: true
 
-  /@commitlint/types@18.6.0:
-    resolution: {integrity: sha1-PTSTy1kQ9g83SajrVqykfcLhtmI=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/types/download/@commitlint/types-18.6.0.tgz}
+  /@commitlint/types@18.6.1:
+    resolution: {integrity: sha1-frOrLXmdkWb7uYuWsHRFgeWaStQ=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/types/download/@commitlint/types-18.6.1.tgz}
     engines: {node: '>=v18'}
     dependencies:
       chalk: 4.1.2
@@ -491,13 +487,13 @@ packages:
     dev: true
     optional: true
 
-  /@eslint-community/eslint-utils@4.4.0(eslint@8.56.0):
+  /@eslint-community/eslint-utils@4.4.0(eslint@8.57.0):
     resolution: {integrity: sha1-ojUU6Pua8SadX3eIqlVnmNYca1k=, tarball: http://registry.npm.release.ctripcorp.com/@eslint-community/eslint-utils/download/@eslint-community/eslint-utils-4.4.0.tgz}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
     dependencies:
-      eslint: 8.56.0
+      eslint: 8.57.0
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -523,8 +519,8 @@ packages:
       - supports-color
     dev: true
 
-  /@eslint/js@8.56.0:
-    resolution: {integrity: sha1-7yA1D+xgWn9wNaAXZHMbLeDzeCs=, tarball: http://registry.npm.release.ctripcorp.com/@eslint/js/download/@eslint/js-8.56.0.tgz}
+  /@eslint/js@8.57.0:
+    resolution: {integrity: sha1-pUF66EJ4c/HdCLcLNXS0U+Z7X38=, tarball: http://registry.npm.release.ctripcorp.com/@eslint/js/download/@eslint/js-8.57.0.tgz}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
@@ -683,8 +679,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-darwin-arm64@1.4.1:
-    resolution: {integrity: sha1-qmbsgNnENYaIinmy+AJkqiqW/fM=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-darwin-arm64/download/@swc/core-darwin-arm64-1.4.1.tgz}
+  /@swc/core-darwin-arm64@1.4.2:
+    resolution: {integrity: sha1-O1Z3xbnFp6kdlTuWzWA8lAZOKDU=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-darwin-arm64/download/@swc/core-darwin-arm64-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
@@ -692,8 +688,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-darwin-x64@1.4.1:
-    resolution: {integrity: sha1-3kA376tG8tF2CbL+oNDgWsnwdrU=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-darwin-x64/download/@swc/core-darwin-x64-1.4.1.tgz}
+  /@swc/core-darwin-x64@1.4.2:
+    resolution: {integrity: sha1-u8i79CA4mxJUEVElWlDzGcwX75Y=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-darwin-x64/download/@swc/core-darwin-x64-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
@@ -701,8 +697,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-arm-gnueabihf@1.4.1:
-    resolution: {integrity: sha1-IM9o1ZEWHoTAthWK+bdJterXiAA=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-arm-gnueabihf/download/@swc/core-linux-arm-gnueabihf-1.4.1.tgz}
+  /@swc/core-linux-arm-gnueabihf@1.4.2:
+    resolution: {integrity: sha1-qpoY8TCCBxffCMndiCBD/Efo01o=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-arm-gnueabihf/download/@swc/core-linux-arm-gnueabihf-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
@@ -710,8 +706,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-arm64-gnu@1.4.1:
-    resolution: {integrity: sha1-RNxJfhJ8D1ZRynTy5Jd3Q73j+Oc=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-arm64-gnu/download/@swc/core-linux-arm64-gnu-1.4.1.tgz}
+  /@swc/core-linux-arm64-gnu@1.4.2:
+    resolution: {integrity: sha1-XvHeDKfMOgNKo6HDwXlLeObKIH4=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-arm64-gnu/download/@swc/core-linux-arm64-gnu-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -720,8 +716,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-arm64-musl@1.4.1:
-    resolution: {integrity: sha1-DiFHBCFTHlYM4LgL3oe6COGSB/0=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-arm64-musl/download/@swc/core-linux-arm64-musl-1.4.1.tgz}
+  /@swc/core-linux-arm64-musl@1.4.2:
+    resolution: {integrity: sha1-Xf0qjASDdwowfeDMtgGaCC/w2QI=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-arm64-musl/download/@swc/core-linux-arm64-musl-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -730,8 +726,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-x64-gnu@1.4.1:
-    resolution: {integrity: sha1-sAi+aD4kqkp7ExI7bdcFgOh7QWc=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-x64-gnu/download/@swc/core-linux-x64-gnu-1.4.1.tgz}
+  /@swc/core-linux-x64-gnu@1.4.2:
+    resolution: {integrity: sha1-MUqna3wSCOMV4xVqtXtxiPtgW8I=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-x64-gnu/download/@swc/core-linux-x64-gnu-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -740,8 +736,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-x64-musl@1.4.1:
-    resolution: {integrity: sha1-KItXQleL65oMlLXohWNOYet5dYM=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-x64-musl/download/@swc/core-linux-x64-musl-1.4.1.tgz}
+  /@swc/core-linux-x64-musl@1.4.2:
+    resolution: {integrity: sha1-srImZX9qjUj1Ycs9vi1BTPuv5Gc=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-linux-x64-musl/download/@swc/core-linux-x64-musl-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -750,8 +746,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-win32-arm64-msvc@1.4.1:
-    resolution: {integrity: sha1-5ApCc6qxUJ2F4qVhqBj25wVxgwU=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-win32-arm64-msvc/download/@swc/core-win32-arm64-msvc-1.4.1.tgz}
+  /@swc/core-win32-arm64-msvc@1.4.2:
+    resolution: {integrity: sha1-WC95+jKM4PQmq4MTs9iB5zFfqy8=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-win32-arm64-msvc/download/@swc/core-win32-arm64-msvc-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
@@ -759,8 +755,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-win32-ia32-msvc@1.4.1:
-    resolution: {integrity: sha1-cmcxthjQ+Zxc3IurAE3z2uFGWKk=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-win32-ia32-msvc/download/@swc/core-win32-ia32-msvc-1.4.1.tgz}
+  /@swc/core-win32-ia32-msvc@1.4.2:
+    resolution: {integrity: sha1-FcgonhwYhX95ubiIEAqx+HG/WPY=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-win32-ia32-msvc/download/@swc/core-win32-ia32-msvc-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
@@ -768,8 +764,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-win32-x64-msvc@1.4.1:
-    resolution: {integrity: sha1-cTgs/WCBG1/s3x7ORYvSGZKjeuU=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-win32-x64-msvc/download/@swc/core-win32-x64-msvc-1.4.1.tgz}
+  /@swc/core-win32-x64-msvc@1.4.2:
+    resolution: {integrity: sha1-yZnKe2gSTQWLQKFDHN1vVneWcNU=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core-win32-x64-msvc/download/@swc/core-win32-x64-msvc-1.4.2.tgz}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
@@ -777,8 +773,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core@1.4.1:
-    resolution: {integrity: sha1-5r7g+l0Mk5V7J06qYYa7utQ/IGM=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core/download/@swc/core-1.4.1.tgz}
+  /@swc/core@1.4.2:
+    resolution: {integrity: sha1-MQsNXpPkfKcvVBUMj578tDTDmxc=, tarball: http://registry.npm.release.ctripcorp.com/@swc/core/download/@swc/core-1.4.2.tgz}
     engines: {node: '>=10'}
     requiresBuild: true
     peerDependencies:
@@ -790,16 +786,16 @@ packages:
       '@swc/counter': 0.1.3
       '@swc/types': 0.1.5
     optionalDependencies:
-      '@swc/core-darwin-arm64': 1.4.1
-      '@swc/core-darwin-x64': 1.4.1
-      '@swc/core-linux-arm-gnueabihf': 1.4.1
-      '@swc/core-linux-arm64-gnu': 1.4.1
-      '@swc/core-linux-arm64-musl': 1.4.1
-      '@swc/core-linux-x64-gnu': 1.4.1
-      '@swc/core-linux-x64-musl': 1.4.1
-      '@swc/core-win32-arm64-msvc': 1.4.1
-      '@swc/core-win32-ia32-msvc': 1.4.1
-      '@swc/core-win32-x64-msvc': 1.4.1
+      '@swc/core-darwin-arm64': 1.4.2
+      '@swc/core-darwin-x64': 1.4.2
+      '@swc/core-linux-arm-gnueabihf': 1.4.2
+      '@swc/core-linux-arm64-gnu': 1.4.2
+      '@swc/core-linux-arm64-musl': 1.4.2
+      '@swc/core-linux-x64-gnu': 1.4.2
+      '@swc/core-linux-x64-musl': 1.4.2
+      '@swc/core-win32-arm64-msvc': 1.4.2
+      '@swc/core-win32-ia32-msvc': 1.4.2
+      '@swc/core-win32-x64-msvc': 1.4.2
     dev: true
 
   /@swc/counter@0.1.3:
@@ -843,14 +839,14 @@ packages:
   /@types/react-dom@18.2.19:
     resolution: {integrity: sha1-uEt8MMY1psJsam37tZmy2peIvlg=, tarball: http://registry.npm.release.ctripcorp.com/@types/react-dom/download/@types/react-dom-18.2.19.tgz}
     dependencies:
-      '@types/react': 18.2.56
+      '@types/react': 18.2.58
     dev: true
 
   /@types/react-router-dom@5.3.3:
     resolution: {integrity: sha1-6da0pm/NvWUaXxBsJlajAIjMHoM=, tarball: http://registry.npm.release.ctripcorp.com/@types/react-router-dom/download/@types/react-router-dom-5.3.3.tgz}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.2.56
+      '@types/react': 18.2.58
       '@types/react-router': 5.1.20
     dev: true
 
@@ -858,11 +854,11 @@ packages:
     resolution: {integrity: sha1-iOzKoSKoJAXvPvvKql3N2fAhOHw=, tarball: http://registry.npm.release.ctripcorp.com/@types/react-router/download/@types/react-router-5.1.20.tgz}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.2.56
+      '@types/react': 18.2.58
     dev: true
 
-  /@types/react@18.2.56:
-    resolution: {integrity: sha1-LT6QIaC261v8IndhzGGxxtxuDNg=, tarball: http://registry.npm.release.ctripcorp.com/@types/react/download/@types/react-18.2.56.tgz}
+  /@types/react@18.2.58:
+    resolution: {integrity: sha1-IggtEomNEYBvShrvtVgxFqBHST0=, tarball: http://registry.npm.release.ctripcorp.com/@types/react/download/@types/react-18.2.58.tgz}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -873,11 +869,11 @@ packages:
     resolution: {integrity: sha1-zlrOBM/qvn74fACR5QdS42cH3v8=, tarball: http://registry.npm.release.ctripcorp.com/@types/scheduler/download/@types/scheduler-0.16.8.tgz}
     dev: true
 
-  /@types/semver@7.5.7:
-    resolution: {integrity: sha1-Mm9f3acNE1gHd7yqG8b6dypa7w4=, tarball: http://registry.npm.release.ctripcorp.com/@types/semver/download/@types/semver-7.5.7.tgz}
+  /@types/semver@7.5.8:
+    resolution: {integrity: sha1-gmioxXo+Sr0lwWXs02I323lIpV4=, tarball: http://registry.npm.release.ctripcorp.com/@types/semver/download/@types/semver-7.5.8.tgz}
     dev: true
 
-  /@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/eslint-plugin@6.21.0(@typescript-eslint/parser@6.21.0)(eslint@8.57.0)(typescript@5.3.3):
     resolution: {integrity: sha1-MIMMHKgf1fPCcU5STEMD4BlPnNM=, tarball: http://registry.npm.release.ctripcorp.com/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-6.21.0.tgz}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -889,13 +885,13 @@ packages:
         optional: true
     dependencies:
       '@eslint-community/regexpp': 4.10.0
-      '@typescript-eslint/parser': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser': 6.21.0(eslint@8.57.0)(typescript@5.3.3)
       '@typescript-eslint/scope-manager': 6.21.0
-      '@typescript-eslint/type-utils': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/utils': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/type-utils': 6.21.0(eslint@8.57.0)(typescript@5.3.3)
+      '@typescript-eslint/utils': 6.21.0(eslint@8.57.0)(typescript@5.3.3)
       '@typescript-eslint/visitor-keys': 6.21.0
       debug: 4.3.4
-      eslint: 8.56.0
+      eslint: 8.57.0
       graphemer: 1.4.0
       ignore: 5.3.1
       natural-compare: 1.4.0
@@ -906,7 +902,7 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/parser@6.21.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/parser@6.21.0(eslint@8.57.0)(typescript@5.3.3):
     resolution: {integrity: sha1-r4/PZv7uLtyGvF0c9F4zsGML81s=, tarball: http://registry.npm.release.ctripcorp.com/@typescript-eslint/parser/download/@typescript-eslint/parser-6.21.0.tgz}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -921,7 +917,7 @@ packages:
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.3.3)
       '@typescript-eslint/visitor-keys': 6.21.0
       debug: 4.3.4
-      eslint: 8.56.0
+      eslint: 8.57.0
       typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
@@ -935,7 +931,7 @@ packages:
       '@typescript-eslint/visitor-keys': 6.21.0
     dev: true
 
-  /@typescript-eslint/type-utils@6.21.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/type-utils@6.21.0(eslint@8.57.0)(typescript@5.3.3):
     resolution: {integrity: sha1-ZHMoHP7U2sq+gAToUhzuC9nUwB4=, tarball: http://registry.npm.release.ctripcorp.com/@typescript-eslint/type-utils/download/@typescript-eslint/type-utils-6.21.0.tgz}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
@@ -946,9 +942,9 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.3.3)
-      '@typescript-eslint/utils': 6.21.0(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/utils': 6.21.0(eslint@8.57.0)(typescript@5.3.3)
       debug: 4.3.4
-      eslint: 8.56.0
+      eslint: 8.57.0
       ts-api-utils: 1.2.1(typescript@5.3.3)
       typescript: 5.3.3
     transitivePeerDependencies:
@@ -982,19 +978,19 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/utils@6.21.0(eslint@8.56.0)(typescript@5.3.3):
+  /@typescript-eslint/utils@6.21.0(eslint@8.57.0)(typescript@5.3.3):
     resolution: {integrity: sha1-RxTnprOedzwcjpfsWH9SCEDNgTQ=, tarball: http://registry.npm.release.ctripcorp.com/@typescript-eslint/utils/download/@typescript-eslint/utils-6.21.0.tgz}
     engines: {node: ^16.0.0 || >=18.0.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       '@types/json-schema': 7.0.15
-      '@types/semver': 7.5.7
+      '@types/semver': 7.5.8
       '@typescript-eslint/scope-manager': 6.21.0
       '@typescript-eslint/types': 6.21.0
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.3.3)
-      eslint: 8.56.0
+      eslint: 8.57.0
       semver: 7.6.0
     transitivePeerDependencies:
       - supports-color
@@ -1013,13 +1009,13 @@ packages:
     resolution: {integrity: sha1-dWZBrbWHhRtcyz4JXa8nrlgchAY=, tarball: http://registry.npm.release.ctripcorp.com/@ungap/structured-clone/download/@ungap/structured-clone-1.2.0.tgz}
     dev: true
 
-  /@vitejs/plugin-react-swc@3.6.0(vite@5.1.3):
+  /@vitejs/plugin-react-swc@3.6.0(vite@5.1.4):
     resolution: {integrity: sha1-3JzRNjuvN4DzrT4KEqRqP/4MdSY=, tarball: http://registry.npm.release.ctripcorp.com/@vitejs/plugin-react-swc/download/@vitejs/plugin-react-swc-3.6.0.tgz}
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
-      '@swc/core': 1.4.1
-      vite: 5.1.3(@types/node@20.11.20)(sass@1.71.1)
+      '@swc/core': 1.4.2
+      vite: 5.1.4(@types/node@20.11.20)(sass@1.71.1)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1308,6 +1304,13 @@ packages:
       compare-func: 2.0.0
     dev: true
 
+  /conventional-changelog-conventionalcommits@7.0.2:
+    resolution: {integrity: sha1-ql2g8bJUMJSInoz3YW6+Go9ccNU=, tarball: http://registry.npm.release.ctripcorp.com/conventional-changelog-conventionalcommits/download/conventional-changelog-conventionalcommits-7.0.2.tgz}
+    engines: {node: '>=16'}
+    dependencies:
+      compare-func: 2.0.0
+    dev: true
+
   /conventional-commits-parser@5.0.0:
     resolution: {integrity: sha1-V/NZS4GtVNQMG0KA8EVU3yhifZo=, tarball: http://registry.npm.release.ctripcorp.com/conventional-commits-parser/download/conventional-commits-parser-5.0.0.tgz}
     engines: {node: '>=16'}
@@ -1486,21 +1489,21 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-plugin-react-hooks@4.6.0(eslint@8.56.0):
+  /eslint-plugin-react-hooks@4.6.0(eslint@8.57.0):
     resolution: {integrity: sha1-TD5petlbd+k/hkaqoWMMG6YH7dM=, tarball: http://registry.npm.release.ctripcorp.com/eslint-plugin-react-hooks/download/eslint-plugin-react-hooks-4.6.0.tgz}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
     dependencies:
-      eslint: 8.56.0
+      eslint: 8.57.0
     dev: true
 
-  /eslint-plugin-react-refresh@0.4.5(eslint@8.56.0):
+  /eslint-plugin-react-refresh@0.4.5(eslint@8.57.0):
     resolution: {integrity: sha1-a5swe60/66IkTvZKGhVIWscKLQ8=, tarball: http://registry.npm.release.ctripcorp.com/eslint-plugin-react-refresh/download/eslint-plugin-react-refresh-0.4.5.tgz}
     peerDependencies:
       eslint: '>=7'
     dependencies:
-      eslint: 8.56.0
+      eslint: 8.57.0
     dev: true
 
   /eslint-scope@7.2.2:
@@ -1516,15 +1519,15 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint@8.56.0:
-    resolution: {integrity: sha1-SVfOjaQJ3AgJ+ZqwehuUgyq3SxU=, tarball: http://registry.npm.release.ctripcorp.com/eslint/download/eslint-8.56.0.tgz}
+  /eslint@8.57.0:
+    resolution: {integrity: sha1-x4am/Q4LaJQar2JFlvuYcIkZVmg=, tarball: http://registry.npm.release.ctripcorp.com/eslint/download/eslint-8.57.0.tgz}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.56.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
       '@eslint-community/regexpp': 4.10.0
       '@eslint/eslintrc': 2.1.4
-      '@eslint/js': 8.56.0
+      '@eslint/js': 8.57.0
       '@humanwhocodes/config-array': 0.11.14
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
@@ -1624,7 +1627,7 @@ packages:
       human-signals: 5.0.0
       is-stream: 3.0.0
       merge-stream: 2.0.0
-      npm-run-path: 5.2.0
+      npm-run-path: 5.3.0
       onetime: 6.0.0
       signal-exit: 4.1.0
       strip-final-newline: 3.0.0
@@ -1693,13 +1696,13 @@ packages:
     resolution: {integrity: sha1-LAwtUEDJmxYydxqdEFclwBFTY+4=, tarball: http://registry.npm.release.ctripcorp.com/flat-cache/download/flat-cache-3.2.0.tgz}
     engines: {node: ^10.12.0 || >=12.0.0}
     dependencies:
-      flatted: 3.2.9
+      flatted: 3.3.1
       keyv: 4.5.4
       rimraf: 3.0.2
     dev: true
 
-  /flatted@3.2.9:
-    resolution: {integrity: sha1-frTGfKG6NCMsqdLZPpiG5hGtfa8=, tarball: http://registry.npm.release.ctripcorp.com/flatted/download/flatted-3.2.9.tgz}
+  /flatted@3.3.1:
+    resolution: {integrity: sha1-IdtHBymmc01JlwAvQ5yzCJh/Vno=, tarball: http://registry.npm.release.ctripcorp.com/flatted/download/flatted-3.3.1.tgz}
     dev: true
 
   /follow-redirects@1.15.5:
@@ -1839,8 +1842,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /hasown@2.0.0:
-    resolution: {integrity: sha1-9MUT1FSle3x+FlB3jeImsRcAVGw=, tarball: http://registry.npm.release.ctripcorp.com/hasown/download/hasown-2.0.0.tgz}
+  /hasown@2.0.1:
+    resolution: {integrity: sha1-JvSPA53iwPjTNWwiP7jVAlNRn6o=, tarball: http://registry.npm.release.ctripcorp.com/hasown/download/hasown-2.0.1.tgz}
     engines: {node: '>= 0.4'}
     dependencies:
       function-bind: 1.1.2
@@ -1929,7 +1932,7 @@ packages:
   /is-core-module@2.13.1:
     resolution: {integrity: sha1-rQ11Msb+qdoevcgnQtdFJcYnM4Q=, tarball: http://registry.npm.release.ctripcorp.com/is-core-module/download/is-core-module-2.13.1.tgz}
     dependencies:
-      hasown: 2.0.0
+      hasown: 2.0.1
     dev: true
 
   /is-extglob@2.1.1:
@@ -2335,8 +2338,8 @@ packages:
       path-key: 3.1.1
     dev: true
 
-  /npm-run-path@5.2.0:
-    resolution: {integrity: sha1-IkzdIsdVVgJT3XG4Oh7y91iy6VU=, tarball: http://registry.npm.release.ctripcorp.com/npm-run-path/download/npm-run-path-5.2.0.tgz}
+  /npm-run-path@5.3.0:
+    resolution: {integrity: sha1-4jNT0Ou5MX8XTpNBfkpNgtAknp8=, tarball: http://registry.npm.release.ctripcorp.com/npm-run-path/download/npm-run-path-5.3.0.tgz}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       path-key: 4.0.0
@@ -2703,14 +2706,6 @@ packages:
     hasBin: true
     dev: true
 
-  /semver@7.5.4:
-    resolution: {integrity: sha1-SDmG7E7TjhxsSMNIlKkYLb/2im4=, tarball: http://registry.npm.release.ctripcorp.com/semver/download/semver-7.5.4.tgz}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
-    dev: true
-
   /semver@7.6.0:
     resolution: {integrity: sha1-Gkak20v/zM2Xt0O1AFyDJfI9Ti0=, tarball: http://registry.npm.release.ctripcorp.com/semver/download/semver-7.6.0.tgz}
     engines: {node: '>=10'}
@@ -2986,8 +2981,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@5.1.3(@types/node@20.11.20)(sass@1.71.1):
-    resolution: {integrity: sha1-3QcmU6gCJXAiZVUKRwBWF0Df3lU=, tarball: http://registry.npm.release.ctripcorp.com/vite/download/vite-5.1.3.tgz}
+  /vite@5.1.4(@types/node@20.11.20)(sass@1.71.1):
+    resolution: {integrity: sha1-FOnT56bkiPNihO8Tzr4UnwYLz7Y=, tarball: http://registry.npm.release.ctripcorp.com/vite/download/vite-5.1.4.tgz}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
