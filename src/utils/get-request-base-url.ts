@@ -8,11 +8,14 @@ export default (soaCode: string) => {
   const soaApiPrefix = {
     fat:
       typeof window === "undefined"
-        ? `https://xxx.xxx/restapi/soa2/${soaCode}`
+        ? `https://xxx.xxx.com/restapi/soa2/${soaCode}`
         : // 本地域名默认 http，只能走代理，不能直接使用 localhost
-          `http://xxx.xxx/soa2/${soaCode}`,
+          `http://xxx.xxx.com/soa2/${soaCode}`,
 
-    prod: typeof window === "undefined" ? `https://xxx.xxx/restapi/soa2/${soaCode}` : `https://xxx.xxx/soa2/${soaCode}`,
+    prod:
+      typeof window === "undefined"
+        ? `https://xxx.xxx.com/restapi/soa2/${soaCode}`
+        : `https://xxx.xxx.com/soa2/${soaCode}`,
   };
 
   return soaApiPrefix[formatEnv as keyof typeof soaApiPrefix];

@@ -4,7 +4,6 @@ export enum PartRoutes {
 }
 
 export enum Routes {
-  Default = "/",
   NotFound = "*",
   Home = "/home",
   About = "/about",

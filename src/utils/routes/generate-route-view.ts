@@ -10,9 +10,8 @@ export default () => {
     currentRouters.forEach(item => {
       if (!item?.children?.length) {
         finallyPagePathMap.push({
-          key: item.key,
+          ...item,
           path: `${parentPath}${item.path}`,
-          element: item?.element,
         });
       } else {
         traverse(`${parentPath}${item.path}`, item.children);

@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 export const useGoTo = () => {
   const navigate = useNavigate();
 
+  const goBack = () => {
+    navigate(-1);
+  };
+
   const gotoHome = () => {
     navigate(Routes.Home, {
       state: {
@@ -21,6 +25,7 @@ export const useGoTo = () => {
   };
 
   return {
+    goBack,
     gotoHome,
     gotoAbout,
     gotoCrawlerCleaningList,

@@ -33,10 +33,13 @@ dependencies:
 devDependencies:
   '@commitlint/cli':
     specifier: ^18.6.0
-    version: 18.6.0(@types/node@20.11.19)(typescript@5.3.3)
+    version: 18.6.0(@types/node@20.11.20)(typescript@5.3.3)
   '@commitlint/config-angular':
     specifier: ^18.6.0
     version: 18.6.0
+  '@types/node':
+    specifier: ^20.11.20
+    version: 20.11.20
   '@types/react':
     specifier: ^18.2.43
     version: 18.2.56
@@ -81,7 +84,7 @@ devDependencies:
     version: 5.3.3
   vite:
     specifier: ^5.0.8
-    version: 5.1.3(@types/node@20.11.19)(sass@1.71.1)
+    version: 5.1.3(@types/node@20.11.20)(sass@1.71.1)
 
 packages:
 
@@ -112,14 +115,14 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@commitlint/cli@18.6.0(@types/node@20.11.19)(typescript@5.3.3):
+  /@commitlint/cli@18.6.0(@types/node@20.11.20)(typescript@5.3.3):
     resolution: {integrity: sha1-8GXgUU84cLbcmjxginiCCAa0ZSc=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/cli/download/@commitlint/cli-18.6.0.tgz}
     engines: {node: '>=v18'}
     hasBin: true
     dependencies:
       '@commitlint/format': 18.6.0
       '@commitlint/lint': 18.6.0
-      '@commitlint/load': 18.6.0(@types/node@20.11.19)(typescript@5.3.3)
+      '@commitlint/load': 18.6.0(@types/node@20.11.20)(typescript@5.3.3)
       '@commitlint/read': 18.6.0
       '@commitlint/types': 18.6.0
       execa: 5.1.1
@@ -195,7 +198,7 @@ packages:
       '@commitlint/types': 18.6.0
     dev: true
 
-  /@commitlint/load@18.6.0(@types/node@20.11.19)(typescript@5.3.3):
+  /@commitlint/load@18.6.0(@types/node@20.11.20)(typescript@5.3.3):
     resolution: {integrity: sha1-mBCClLk4OqKQV4GxkiFd9HGLq7c=, tarball: http://registry.npm.release.ctripcorp.com/@commitlint/load/download/@commitlint/load-18.6.0.tgz}
     engines: {node: '>=v18'}
     dependencies:
@@ -205,7 +208,7 @@ packages:
       '@commitlint/types': 18.6.0
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@5.3.3)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.19)(cosmiconfig@8.3.6)(typescript@5.3.3)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.11.20)(cosmiconfig@8.3.6)(typescript@5.3.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -280,6 +283,15 @@ packages:
     dependencies:
       chalk: 4.1.2
     dev: true
+
+  /@esbuild/aix-ppc64@0.19.12:
+    resolution: {integrity: sha1-0bwGrttpNrO20xO/gJpaQDh9K38=, tarball: http://registry.npm.release.ctripcorp.com/@esbuild/aix-ppc64/download/@esbuild/aix-ppc64-0.19.12.tgz}
+    engines: {node: '>=12'}
+    cpu: [ppc64]
+    os: [aix]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /@esbuild/android-arm64@0.19.12:
     resolution: {integrity: sha1-etZaNs/bfg1CnDU+APaA1zfCrtQ=, tarball: http://registry.npm.release.ctripcorp.com/@esbuild/android-arm64/download/@esbuild/android-arm64-0.19.12.tgz}
@@ -814,8 +826,8 @@ packages:
     resolution: {integrity: sha1-7BB1XocUl7zYPv6SfkPsRujAdH4=, tarball: http://registry.npm.release.ctripcorp.com/@types/minimist/download/@types/minimist-1.2.5.tgz}
     dev: true
 
-  /@types/node@20.11.19:
-    resolution: {integrity: sha1-tGbeBU6ctbODG+44k43mSsf4EZU=, tarball: http://registry.npm.release.ctripcorp.com/@types/node/download/@types/node-20.11.19.tgz}
+  /@types/node@20.11.20:
+    resolution: {integrity: sha1-8KKu5XUhUUmmJ4QhCtiLOjSENlk=, tarball: http://registry.npm.release.ctripcorp.com/@types/node/download/@types/node-20.11.20.tgz}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1007,7 +1019,7 @@ packages:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.4.1
-      vite: 5.1.3(@types/node@20.11.19)(sass@1.71.1)
+      vite: 5.1.3(@types/node@20.11.20)(sass@1.71.1)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1307,7 +1319,7 @@ packages:
       split2: 4.2.0
     dev: true
 
-  /cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.19)(cosmiconfig@8.3.6)(typescript@5.3.3):
+  /cosmiconfig-typescript-loader@5.0.0(@types/node@20.11.20)(cosmiconfig@8.3.6)(typescript@5.3.3):
     resolution: {integrity: sha1-DTvs/gIqhx9ydc6yOX1pLgYEXcg=, tarball: http://registry.npm.release.ctripcorp.com/cosmiconfig-typescript-loader/download/cosmiconfig-typescript-loader-5.0.0.tgz}
     engines: {node: '>=v16'}
     peerDependencies:
@@ -1315,7 +1327,7 @@ packages:
       cosmiconfig: '>=8.2'
       typescript: '>=4'
     dependencies:
-      '@types/node': 20.11.19
+      '@types/node': 20.11.20
       cosmiconfig: 8.3.6(typescript@5.3.3)
       jiti: 1.21.0
       typescript: 5.3.3
@@ -1434,6 +1446,7 @@ packages:
     hasBin: true
     requiresBuild: true
     optionalDependencies:
+      '@esbuild/aix-ppc64': 0.19.12
       '@esbuild/android-arm': 0.19.12
       '@esbuild/android-arm64': 0.19.12
       '@esbuild/android-x64': 0.19.12
@@ -2973,7 +2986,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@5.1.3(@types/node@20.11.19)(sass@1.71.1):
+  /vite@5.1.3(@types/node@20.11.20)(sass@1.71.1):
     resolution: {integrity: sha1-3QcmU6gCJXAiZVUKRwBWF0Df3lU=, tarball: http://registry.npm.release.ctripcorp.com/vite/download/vite-5.1.3.tgz}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -3001,7 +3014,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.11.19
+      '@types/node': 20.11.20
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.0

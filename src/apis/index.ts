@@ -20,6 +20,7 @@ class RequestInstace {
       const tmpInstance = axios.create({
         baseURL: baseURL || "",
         timeout: 3000,
+        // 携带 cookie，在复杂请求中使用 Access-Control-Allow-Credentials
         withCredentials: true,
         // 自定义请求头
         headers: {},

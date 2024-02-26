@@ -6,11 +6,6 @@ import NotFound from "@/pages/404";
 
 export const routes: RouteConfig[] = [
   {
-    path: Routes.Default,
-    key: Routes.Default,
-    element: <Home />,
-  },
-  {
     path: Routes.NotFound,
     key: Routes.NotFound,
     element: <NotFound />,

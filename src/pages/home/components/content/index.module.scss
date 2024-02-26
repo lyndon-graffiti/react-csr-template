@@ -1,15 +1,15 @@
 @use '@/styles/_mixins.scss';
 
 .container {
-    @include mixins.screen;
-    @include mixins.flex-center;
+    height: 100%;
     flex-direction: column;
+    @include mixins.flex-box;
 }
 
 .goto {
-    text-decoration: underline;
-    margin-bottom: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: underline;
 }
 
 .count {
