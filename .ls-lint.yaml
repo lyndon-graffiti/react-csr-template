@@ -1,0 +1,13 @@
+ls:
+  src:
+    .js: kebab-case
+    .ts: kebab-case
+    .tsx: kebab-case
+    .json: kebab-case
+    .d.ts: kebab-case
+    .dir: kebab-case
+
+ignore:
+  - .git
+  - node_modules
+  - .tsconfig.node.json

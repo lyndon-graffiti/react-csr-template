@@ -37,6 +37,9 @@ devDependencies:
   '@commitlint/config-conventional':
     specifier: ^18.6.2
     version: 18.6.2
+  '@ls-lint/ls-lint':
+    specifier: ^2.2.2
+    version: 2.2.2
   '@types/lodash-es':
     specifier: ^4.17.12
     version: 4.17.12
@@ -551,6 +554,13 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha1-2frgCi1ctA+Sz+ZLR610n7w4+Rc=, tarball: http://registry.npm.release.ctripcorp.com/@humanwhocodes/object-schema/download/@humanwhocodes/object-schema-2.0.2.tgz}
+    dev: true
+
+  /@ls-lint/ls-lint@2.2.2:
+    resolution: {integrity: sha1-c54XYm190lRCtBnyhhNQRSh8//4=, tarball: http://registry.npm.release.ctripcorp.com/@ls-lint/ls-lint/download/@ls-lint/ls-lint-2.2.2.tgz}
+    cpu: [x64, arm64, s390x]
+    os: [darwin, linux, win32]
+    hasBin: true
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:
