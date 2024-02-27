@@ -1,0 +1,15 @@
+ls:
+  .js: kebab-case
+  .ts: kebab-case
+  .tsx: kebab-case
+  .json: kebab-case
+  .d.ts: kebab-case
+  src/**:
+    .dir: kebab-case
+  public/**:
+    .dir: kebab-case
+
+ignore:
+  - .git
+  - node_modules
+  - .tsconfig.node.json
