@@ -12,4 +12,6 @@ ls:
 ignore:
   - .git
   - node_modules
-  - .tsconfig.node.json
+  - vite.config.ts
+  - .commitlintrc.json
+  - tsconfig.node.json
