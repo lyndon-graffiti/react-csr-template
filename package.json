@@ -1,10 +1,20 @@
 {
   "name": "@lyndon/react-csr-template",
   "version": "0.1.0",
-  "type": "module",
   "author": {
-    "name": "lyndon."
+    "name": "lyndon.",
+    "email": "wuxianzhi052@gmail.com"
   },
+  "keywords": [
+    "react",
+    "csr",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lyndon-graffiti/react-csr-template"
+  },
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -15,7 +25,8 @@
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,html,css,json}": [
       "ls-lint",
-      "prettier --write"
+      "prettier --write",
+      "npm run lint"
     ]
   },
   "dependencies": {
