@@ -5,7 +5,7 @@ export async function getPageConfigInfoApi(
   params: GetPageConfigInfoRequestType,
 ): Promise<GetPageConfigInfoResponseType> {
   return await request30783({
+    params,
     url: "/getPageConfigInfo",
-    params: params,
   });
 }
